@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="./style.css">
+    <title>TURNOS ONLINE</title>
+</head>
+<body>
+<h1>Solicita y gestiona tus turnos en un solo lugar.</h1>
+<h1>LOGIN</h1>
+
+<form>
+    <div class="row mb-3">
+        <label for="user-email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+        <input type="email" class="form-control" id="user-email">
+        </div>
+    </div>
+
+    <select class="form-select" aria-label="Selecciona tu email">
+        <option selected>tipo email</option>
+        <option value="1">@gmail.com</option>
+        <option value="2">@hotmail.com</option>
+        <option value="3">@outlook.com</option>
+        <option value="4">@icloud.com'</option>
+        <option value="5">@yahoo.com.ar</option>
+    </select>
+
+    <div class="row mb-3">
+        <label for="contraseña" class="col-sm-2 col-form-label">Contraseña</label>
+        <div class="col-sm-10">
+        <input type="password" class="form-control" id="contraseña">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-sm-10 offset-sm-2">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">Recordar usuario</label>
+        </div>
+        </div>
+    </div>
+
+    
+
+    <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Motivo de consulta</legend>
+        <div class="col-sm-10">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            <label class="form-check-label" for="gridRadios1">Turno medico</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">Turno laboratorio</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+            <label class="form-check-label" for="gridRadios3"> Turno vacunacion</label>
+        </div>
+        </div>
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary">Ingresar</button>
+</form>
+
+<script src="./javascript.js"></script>
+<style>@import "./style.css";</style>
+
+</body>
+</html>
